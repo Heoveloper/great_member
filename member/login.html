@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/437b5ad3c4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../common/common.css" />
+    <link rel="stylesheet" href="./css/login.css" />
+    <title>LOGIN</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- header -->
+        <header class="header container">
+            <nav class="top-menu content">
+                <!-- <a href="#" class="top-menu__member">회원</a> -->
+
+                <li class="top-menu__member">
+                    회원 님
+                    <ul>
+                        <li><a href="/html/buy/write.html">판매글 작성</a></li>
+                        <li><a href="#">판매 내역</a></li>
+                        <li><a href="#">판매 정보</a></li>
+                        <li><a href="#">판매 목록</a></li>
+                        <li><a href="/html/member/profile.html">내 프로필</a></li>
+                        <li><a href="/html/member/myinfo.html">개인정보</a></li>
+                        <li><a href="/html/no_mem_main.html">로그아웃</a></li>
+                    </ul>
+                </li>
+
+                <a href="" class="top-menu__cs">고객센터</a>
+            </nav>
+            <div class="logo content">
+                <a href="/html/mem_main.html">GR<span>EAT</span></a>
+            </div>
+            <nav class="bottom-menu content">
+                <div class="category">
+                    <ul>
+                        <li class="food-category">
+                            업종별 카테고리
+                            <ul>
+                                <li><a href="">한식</a></li>
+                                <li><a href="">중식</a></li>
+                                <li><a href="">일식</a></li>
+                                <li><a href="">양식</a></li>
+                                <li><a href="">아시안식</a></li>
+                                <li><a href="">분식</a></li>
+                                <li><a href="">도시락</a></li>
+                                <li><a href="">카페/디저트</a></li>
+                            </ul>
+                        </li>
+                        <li class="region-category">
+                            지역별 카테고리
+                            <ul>
+                                <li><a href="">서울</a></li>
+                                <li><a href="">인천</a></li>
+                                <li><a href="">대전</a></li>
+                                <li><a href="">광주</a></li>
+                                <li><a href="">대구</a></li>
+                                <li><a href="">울산</a></li>
+                                <li><a href="">부산</a></li>
+                                <li><a href="">제주</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="search">
+                    <input type="text" class="search__search-box" placeholder="  검색어를 입력하세요." />
+                    <a href="" class="search__search-icon"><i class="fa-solid fa-magnifying-glass"></i></a>
+                </div>
+            </nav>
+        </header>
+        <!-- //header -->
+
+        <!-- main -->
+        <main class="main container">
+            <div class="title content">
+              <h1>로그인</h1>
+            </div>
+            <div class="input-data content">
+              <div class="id">
+                <i class="icon__id fa-solid fa-user"></i>
+                <i class="bar__id"></i>
+                <input type="text" placeholder="아이디를 입력하세요." />
+              </div>
+              <div class="pw">
+                <i class="icon__pw fa-solid fa-key"></i>
+                <i class="bar__pw"></i>
+                <input type="password" placeholder="비밀번호를 입력하세요." />
+              </div>
+            </div>
+            <div class="service content">
+              <a href="/find_id/find_id.html" class="service__find-id">아이디 찾기</a><i></i>
+              <a href="/find_pw/find_pw.html" class="service__find-pw">비밀번호 찾기</a>
+              <a href="/join_cust/join_cust.html" class="service__join">회원가입</a>
+            </div>
+            <div class="wrap-login-btn content">
+              <button class="btn login-btn" onclick="location.href='/login/login.html'" >로그인</button>
+            </div>
+            <div class="wrap-kakao-login-btn content">
+              <a href="#" ><img src="./img/kakao_login_medium_wide.png" alt="" /></a>
+            </div>
+          </main>
+        <!-- //main -->
+
+        <!-- footer -->
+        <footer class="footer container">
+            <p class="content"></p>
+        </footer>
+        <!-- footer -->
+    </div>
+</body>
+
+</html>
