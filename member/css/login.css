@@ -8,6 +8,7 @@ button label {cursor: pointer;}
 .main {display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;
        width: 700px; height: 620px;}
 
+
 /* 타이틀 */
 h1 {letter-spacing: 3px; margin: 10px 0px; padding: 0px;}
 
