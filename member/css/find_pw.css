@@ -29,7 +29,7 @@ h2 {margin: 30px 0px 10px;}
 .input-data input {width: 250px; height: 25px; margin: 10px; border: none; font-size: 14px;}
 .input-data input:focus {outline: none;}
 
-/* 로그인 버튼 */
+/* 확인 버튼 */
 .confirm-btn {width: 200px; height: 45px; font-size: 15px; font-weight: bold;
               margin-top: 30px; background-color: var(--main-color-yel); color: #fff;
               border: none; border-radius: 5px; letter-spacing: 3px;}
