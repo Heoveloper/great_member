@@ -6,7 +6,7 @@ button label {cursor: pointer;}
 
 /* 메인 구조 */
 .main {display: flex; flex-direction: column; align-items: center; text-align: center;
-       width: 700px; height: calc(100vh - 300px); padding: 20px 0px;}
+       width: 700px; height: 620px;}
 .wrap-find-pw {display: flex; flex-direction: column; align-items: center; padding-top: 50px;}
 
 
