@@ -34,9 +34,11 @@ h2 {margin: 30px 0px 10px;}
 .wrap-pop-up {position: relative; width: 100%; height: 100%;}
 .pop-up {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
          width: 500px; height: 300px; text-align: center; background: #fff;}
+
 /* 버튼 클릭 시 팝업 등장 */
 .show {z-index: 1000; opacity: 1; transition: all 0.5s;}
 .show .pop-up {transform: translate(-50%, -50%); transition: all 0.5s;}
+
 /* 모달 팝업 레이아웃 */
 .pop-up {display: flex; flex-direction: column;}
 .msg-find-id {padding: 60px 0px;}
