@@ -9,7 +9,7 @@ button label {cursor: pointer;}
        width: 700px;}
 
 /* 테이블 구조 */
-table {display: flex; flex-direction: column; align-items: center; border-spacing: 30px 10px;}
+table {display: flex; flex-direction: column; align-items: center; border-spacing: 30px 10px; padding: 20px 0px;}
 table tr td label {display: flex; justify-content: start;}
 table tr td input:focus {outline: none;}
 table tr td select:focus {outline: none;}
@@ -39,6 +39,7 @@ h2 {letter-spacing: 3px; margin: 10px 0px; padding: 0px;}
 .wrap-join {width: 700px; padding: 20px 0px; text-align: center;}
 .wrap-join::before {content: ""; display: block; width: 70%; border-bottom: 1.5px solid #000; margin: auto;}
 .wrap-join::after {content: ""; display: block; width: 70%; border-bottom: 1.5px solid #000; margin: auto;}
+/* .join {padding: 20px 0px;} */
 
 /* 입력창 크기 */
 .wrap-join input {width: 200px; height: 30px; border: none ;border-bottom: 1px solid rgb(173, 173, 173);}
@@ -46,8 +47,9 @@ h2 {letter-spacing: 3px; margin: 10px 0px; padding: 0px;}
 
 /* 약관 */
 .wrap-terms {padding: 20px 0px;}
-.title-terms {font-weight: bold; letter-spacing: 3px; text-decoration: underline;}
-.view-terms {color: var(--main-color-yel); font-weight: bold; text-decoration: underline;}
+.title-terms {font-weight: bold; letter-spacing: 3px;}
+.title-terms label {text-decoration: underline;}
+.view-terms {color: var(--main-color-yel); font-weight: bold;}
 
 /* 가입하기 */
 .join-btn {padding: 10px 70px; margin: 10px; background-color: var(--main-color-yel);}
