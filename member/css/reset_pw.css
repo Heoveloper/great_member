@@ -6,7 +6,7 @@ button label {cursor: pointer;}
 
 /* 메인 구조 */
 .main {display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;
-       width: 700px; height: 620px;}
+       width: 700px; height: 630px;}
 
 
 /* 타이틀 */
