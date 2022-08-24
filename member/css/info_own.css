@@ -40,3 +40,24 @@ h2 {letter-spacing: 3px; margin: 10px 0px; padding: 0px;}
 /* 탈퇴 */
 .withdraw {display: flex; justify-content: right; font-size: 0.9em;}
 .withdraw i {margin-right: 5px;}
+
+
+/* 모달 팝업 */
+.background {position: fixed; top: 0; left: 0; width: 100%; height: 100vh; background: rgba(0, 0, 0, 0.2); z-index: -1; opacity: 0;}
+.wrap-pop-up {position: relative; width: 100%; height: 100%;}
+.pop-up {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+         width: 500px; height: 300px; text-align: center; background: #fff;}
+
+/* 버튼 클릭 시 팝업 등장 */
+.show {z-index: 1000; opacity: 1; transition: all 0.5s;}
+.show .pop-up {transform: translate(-50%, -50%); transition: all 0.5s;}
+
+/* 모달 팝업 레이아웃 */
+.pop-up {display: flex; flex-direction: column; align-items: center;}
+.close a {display: flex; position: absolute; top: 15px; right: 10px}
+.alert {padding: 78px 0px;}
+.location-choice {display: table; table-layout: fixed; width: 100%; height: 70px; color: white;}
+.location-choice :nth-child(1) {background: #979797;}
+.location-choice :nth-child(2) {background: var(--color-red);}
+.location-choice a {display: table-cell; position: relative; vertical-align: middle; text-align: center;
+                    border: none; letter-spacing: 3px;}
