@@ -40,12 +40,12 @@ h2 {letter-spacing: 3px; margin: 10px 0px; padding: 0px;}
 .btn__owner {padding: 10px 70px; margin: 10px; background-color: var(--main-color-yel);}
 
 /* 입력폼 */
-.wrap-join {width: 700px; padding: 10px 0px; text-align: center;}
+.wrap-join {width: 700px; padding: 10px 0px;}
 .wrap-join::before {content: ""; display: block; width: 70%; border-bottom: 1px solid #000; margin: auto;}
 .wrap-join::after {content: ""; display: block; width: 70%; border-bottom: 1px solid #000; margin: auto;}
 
 /* 입력창 크기 */
-.wrap-join input, .wrap-join select {width: 200px; height: 30px; border: none ; border-bottom: 1px solid rgb(173, 173, 173);}
+.wrap-join input, .wrap-join select {width: 200px; height: 30px; border: none; border-bottom: 1px solid rgb(173, 173, 173);}
 
 /* 약관 */
 .wrap-terms {padding: 20px 0px;}
