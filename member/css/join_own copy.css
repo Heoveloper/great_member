@@ -55,7 +55,16 @@ h2 {letter-spacing: 3px; margin: 10px 0px; padding: 0px;}
 /* 약관 */
 .wrap-terms {padding: 20px 0px;}
 .title-terms {font-weight: bold; letter-spacing: 3px;}
+
+.terms {padding: 15px}
+.terms__ele {display: inline-flex; width: 660px; margin: 10px auto;}
+.terms__ele--1 {width: 100px; margin-left: 150px;}
+.terms__ele--2 {flex: 1 1 0%; text-align: left;}
+.terms__ele--3 {width: 250px; text-align: left;}
+
+
+
 .view-terms {color: var(--main-color-yel); font-weight: bold; text-decoration: underline;}
 
 /* 가입하기 */
-.join-btn {padding: 10px 70px; margin: 10px; background-color: var(--main-color-yel);}
+.join-btn {padding: 10px 70px; margin-bottom: 10px; background-color: var(--main-color-yel);}
