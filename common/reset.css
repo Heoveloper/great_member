@@ -21,7 +21,6 @@ time, mark, audio, video {
 	font: inherit;
 	font-size: 100%;
 	vertical-align: baseline;
-	box-sizing: border-box;
 }
 
 h1,h2,h3,h4 {
