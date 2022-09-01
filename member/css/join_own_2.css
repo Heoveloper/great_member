@@ -9,13 +9,25 @@ button label {cursor: pointer;}
        width: 700px;}
 
 /* 테이블 구조 */
-table {display: flex; flex-direction: column; align-items: center; border-spacing: 10px 10px;}
+.join {display: flex; flex-direction: column; align-items: center; border-spacing: 30px 10px; padding: 20px 0px;}
+.terms {display: flex; flex-direction: column; align-items: center; border-spacing: 30px 0px; padding-top: 20px;}
+
+/* 테이블 구성 */
+table td {height: 40px; vertical-align: middle;}
+
+table td label {position: relative; display: flex; justify-content: start;}
+table td:nth-child(1) label::after {content: "*"; position: absolute; top: 2px; right: 100px;
+                       font-size: 13px; color: var(--color-red);}
+
+table td input:focus {outline: none;}
+table td select:focus {outline: none;}
+
+table td button {display: flex; justify-content: center; align-items: center;
+                 width: 100px; height: 30px;}
+table td button label {text-align: center;}
 
 /* 전체 버튼 */
 button {border: none; border-radius: 5px; background-color: var(--main-color-gre);}
-
-/* 테이블 내의 버튼 */
-td > button {height: 30px;}
 
 /* 일부 버튼 글자 굵게 */
 .member-type label, .join-btn label {font-weight: bold;}
@@ -30,15 +42,20 @@ h2 {letter-spacing: 3px; margin: 10px 0px; padding: 0px;}
 .btn__owner {padding: 10px 70px; margin: 10px; background-color: var(--main-color-yel);}
 
 /* 입력폼 */
-.wrap-join {width: 700px; padding: 20px 0px; border-top: 2px solid var(--main-color-gre); border-bottom: 2px solid var(--main-color-gre);}
+.wrap-join {width: 700px; padding: 10px 0px;}
+.wrap-join::before {content: ""; display: block; width: 70%; border-bottom: 1px solid #000; margin: auto;}
+.wrap-join::after {content: ""; display: block; width: 70%; border-bottom: 1px solid #000; margin: auto;}
+
+/* 유효성 검사 */
+.vali-check {cursor: pointer; color: var(--color-red)}
+.validity-desc {margin:0 auto; padding:0 auto; outline: 1px solid black;}
 
 /* 입력창 크기 */
-.wrap-join input {width: 200px; height: 25px;}
-.wrap-join select {width: 200px; height: 25px;}
+.wrap-join input, .wrap-join select {width: 200px; height: 30px; border: none; border-bottom: 1px solid rgb(173, 173, 173);}
 
 /* 약관 */
 .wrap-terms {padding: 20px 0px;}
-.title-terms {font-weight: bold; letter-spacing: 3px; text-decoration: underline;}
+.title-terms {font-weight: bold; letter-spacing: 3px;}
 .view-terms {color: var(--main-color-yel); font-weight: bold; text-decoration: underline;}
 
 /* 가입하기 */
