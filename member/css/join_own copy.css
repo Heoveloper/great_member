@@ -23,13 +23,15 @@ h2 {letter-spacing: 3px; margin: 10px 0px; padding: 0px;}
 .btn__customer {padding: 10px 70px; margin: 10px;}
 .btn__owner {padding: 10px 70px; margin: 10px; background-color: var(--main-color-yel);}
 
-/* 필수입력사항 메세지 */
+/* 필수입력사항 */
 .required {margin: 20px 0px 0px 600px; font-size: 12px;}
 .required label {letter-spacing: 2px;}
 .required span {color: var(--color-red);}
 
 /* 입력폼 */
 .wrap-join {width: 700px; padding: 10px 0px;}
+.wrap-join input {width: 250px; height: 30px;
+				  border: none; border-bottom: 1px solid rgb(173, 173, 173);}
 .wrap-join::before {content: ""; display: block; width: 70%; border-bottom: 1px solid #000; margin: auto;}
 .wrap-join::after {content: ""; display: block; width: 70%; border-bottom: 1px solid #000; margin: auto;}
 
@@ -46,6 +48,7 @@ h2 {letter-spacing: 3px; margin: 10px 0px; padding: 0px;}
 .join__ele--3 {display: flex; justify-content: flex-start; align-items: center;
                width: 150px; align-items: right;}
 
+/* 유효성검사 표시 */
 .vali__ele {display: inline-flex; width: 600px; margin-top: 5px; margin-bottom: 15px;}
 .vali__ele--1 {display: flex; justify-content: flex-start; align-items: center;
                width: 120px; margin-left: 30px; font-size: 12px;}
@@ -53,9 +56,6 @@ h2 {letter-spacing: 3px; margin: 10px 0px; padding: 0px;}
 			   text-align: left; margin-left: 30px;}
 .vali__ele--3 {display: flex; justify-content: flex-start; align-items: center;
                width: 150px; align-items: right;}
-
-/* 입력창 크기 */
-.wrap-join input {width: 250px; height: 30px; border: none; border-bottom: 1px solid rgb(173, 173, 173);}
 
 /* 약관 */
 .wrap-terms {padding: 20px 0px;}
@@ -66,9 +66,6 @@ h2 {letter-spacing: 3px; margin: 10px 0px; padding: 0px;}
 .terms__ele--1 {width: 100px; margin-left: 150px;}
 .terms__ele--2 {flex: 1 1 0%; text-align: left;}
 .terms__ele--3 {width: 250px; text-align: left;}
-
-
-
 .view-terms {color: var(--main-color-yel); font-weight: bold; text-decoration: underline;}
 
 /* 가입하기 */
