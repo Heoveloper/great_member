@@ -28,9 +28,10 @@
 }
 
 .figure>.slideshow-container {
-    max-width: 1900px;
-    width: 100vw;
     position: relative;
+    width: 100vw;
+    min-width: 1200px;
+    max-width: 1900px;
 }
 
 .figure>.slideshow-container>.banner {
@@ -41,7 +42,7 @@
 .figure>.slideshow-container>.banner>img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: none;
 }
 
 .prev,
