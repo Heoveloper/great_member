@@ -13,6 +13,7 @@
 	<link rel="stylesheet" href="/member/css/join_own.css">
 	<link rel="icon" href="/member/img/icon.svg"> <!-- 탭 아이콘 변경 -->
 	<script src="https://kit.fontawesome.com/132ba309f6.js" crossorigin="anonymous"></script>
+	<script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script> <!-- 주소 찾기 api -->
 	<script src="/member/js/join_own.js"></script>
 	<title>JOIN OWNER</title>
 </head>
@@ -186,9 +187,19 @@
 						<div class="vali__ele--3"></div>
 					</div>
 					<div class="join__ele">
-						<div class="join__ele--1"><label for="">가게 위치<span> *</span></label></div>
-						<div class="join__ele--2"><input type="text" placeholder="가게 위치를 입력하세요."></div>
-						<div class="join__ele--3"><button>주소 검색</button></div>
+						<div class="join__ele--1"><label for="">가게 주소<span> *</span></label></div>
+						<div class="join__ele--2"><input type="text" placeholder="가게 주소를 입력하세요."></div>
+						<div class="join__ele--3"><button id="address_kakao">주소 검색</button></div>
+					</div>
+					<div class="vali__ele">
+						<div class="vali__ele--1"></div>
+						<div class="vali__ele--2"></div>
+						<div class="vali__ele--3"></div>
+					</div>
+					<div class="join__ele">
+						<div class="join__ele--1"></div>
+						<div class="join__ele--2"><input type="text" id="address_kakao2" placeholder="상세 주소를 입력하세요."></div>
+						<div class="join__ele--3"></div>
 					</div>
 					<div class="vali__ele">
 						<div class="vali__ele--1"></div>
