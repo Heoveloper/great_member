@@ -10,10 +10,10 @@
     <meta name="author" content="KH 3팀">
 
     <link rel="stylesheet" href="/common/common.css">
-    <link rel="stylesheet" href="/member/css/join_cust_2.css">
+    <link rel="stylesheet" href="/member_old/css/info_cust_3.css">
     <link rel="icon" href="/member/img/icon.svg"> <!-- 탭 아이콘 변경 -->
     <script src="https://kit.fontawesome.com/132ba309f6.js" crossorigin="anonymous"></script>
-    <title>JOIN CUSTOMER 2</title>
+    <title>INFO CUSTOMER 3</title>
 </head>
 
 <body>
@@ -21,11 +21,20 @@
         <!-- header -->
         <header class="header container">
             <nav class="top-menu content">
-                <a href="/member/join_cust.html" class="top-menu__join">회원가입</a>
-                <a href="/member/login.html" class="top-menu__login">로그인</a>
+                <li class="top-menu__member">회원 님
+                    <ul>
+                        <li><a href="">판매글 작성</a></li>
+                        <li><a href="">판매 내역</a></li>
+                        <li><a href="">판매 정보</a></li>
+                        <li><a href="">판매 목록</a></li>
+                        <li><a href="">내 프로필</a></li>
+                        <li><a href="/member/info_pwc.html">개인정보</a></li>
+                        <li><a href="/member/main_nonmem.html">로그아웃</a></li>
+                    </ul>
+                </li>
                 <a href="" class="top-menu__cs">고객센터</a>
             </nav>
-            <div class="logo content"><a href="/member/main_nonmem.html">GR<span>EAT</span></a></div>
+            <div class="logo content"><a href="/member/main_mem.html">GR<span>EAT</span></a></div>
             <nav class="bottom-menu content">
                 <div class="category">
                     <ul>
@@ -63,22 +72,13 @@
         <!-- main -->
         <main class="main container">
             <div class="title content">
-                <h2>회원가입</h2>
-            </div>
-            <div class="member-type content">
-                <button class="btn btn__customer" onclick="location.href='/member/join_cust.html'" ;>
-                    <label for="">고객회원</label>
-                </button>
-                <button class="btn btn__owner" onclick="location.href='/member/join_own.html'">
-                    <label for="">점주회원</label>
-                </button>
+                <h2>회원정보</h2>
             </div>
             <div class="wrap-join content">
                 <table class="join">
                     <tr>
                         <td><label for="">아이디</label></td>
                         <td><input type="text" placeholder="아이디를 입력하세요."></td>
-                        <td><button><label for="">중복확인</label></button></td>
                     </tr>
                     <tr>
                         <td><label for="">비밀번호</label></td>
@@ -95,56 +95,37 @@
                     <tr>
                         <td><label for="">닉네임</label></td>
                         <td><input type="text" placeholder="닉네임을 입력하세요."></td>
-                        <td><button><label for="">중복확인</label></button></td>
+                        <td><button>중복확인</button></td>
                     </tr>
                     <tr>
                         <td><label for="">이메일</label></td>
                         <td><input type="text" placeholder="이메일을 입력하세요."></td>
-                        <td><button><label for="">인증번호 발송</label></button></td>
+                        <td><button>인증번호 발송</button></td>
                     </tr>
                     <tr>
                         <td><label for="">인증번호</label></td>
                         <td><input type="text" placeholder="인증번호를 입력하세요."></td>
-                        <td><button><label for="">인증번호 확인</label></button></td>
+                        <td><button>인증번호 확인</button></td>
                     </tr>
                     <tr>
                         <td><label for="">주소</label></td>
                         <td><input type="text" placeholder="주소를 입력하세요."></td>
-                        <td><button><label for="">주소검색</label></button></td>
+                        <td><button>주소검색</button></td>
                     </tr>
                 </table>
             </div>
-            <div class="wrap-terms content">
-                <div class="title-terms">
-                    <h3>이용약관</h3>
-                </div>
-                <table class="terms">
-                    <tr>
-                        <td><input type="checkbox" name="" id=""></td>
-                        <td><label for="">전체 동의</label></td>
-                        <td><a href="" class="view-terms">약관 보기</a></td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox" name="" id=""></td>
-                        <td><label for="">이용약관 동의</label></td>
-                        <td><a href="" class="view-terms">약관 보기</a></td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox" name="" id=""></td>
-                        <td><label for="">개인정보 수집 동의</label></td>
-                        <td><a href="" class="view-terms">약관 보기</a></td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox" name="" id=""></td>
-                        <td><label for="">개인정보 이용 동의</label></td>
-                        <td><a href="" class="view-terms">약관 보기</a></td>
-                    </tr>
-                </table>
-            </div>
-            <div class="wrap-join-btn content">
-                <button class="btn join-btn" onclick="location.href='/member/join_complete.html'">
-                    <label for="">가입하기</label>
+            <div class="wrap-btn content">
+                <button class="btn main-btn" onclick="location.href='/member/main_mem.html'">
+                    <i class="fa-solid fa-house"></i>
+                    <label for="">메인 화면</label>
                 </button>
+                <button class="btn modify-btn" onclick="location.href='#'">
+                    <i class="fa-solid fa-pen"></i>
+                    <label for="">수정 완료</label>
+                </button>
+            </div>
+            <div class="withdraw content">
+                <a href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i>회원 탈퇴</a>
             </div>
         </main>
         <!-- //main -->
