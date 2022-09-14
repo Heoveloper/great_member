@@ -18,25 +18,11 @@ button {border: none; border-radius: 5px; background-color: var(--main-color-gre
 h2 {letter-spacing: 3px; margin: 10px 0px; padding: 0px;}
 
 /* 회원유형 버튼 */
-/* .member-type {display: flex; justify-content: center; width: 100%;}
-.btn__customer {padding: 10px 70px; margin: 10px;  background-color: var(--main-color-yel);}
-.btn__owner {padding: 10px 70px; margin: 10px;} */
 .member-type {display: flex; justify-content: center; width: 100%;}
-/* .member-type label {font-size: 13px;} */
 .member-type input[type=radio] {display: none;}
-.member-type input[type=radio] + label {
-       display: flex;
-       justify-content: center;
-       width: 200px;
-       height: 40px;
-       margin: 10px;
-       padding: 10px 60px;
-       border: none;
-       border-radius: 5px;
-       font-size: 14px;
-	   letter-spacing: 3px;
-       background-color: var(--main-color-gre);
-}
+.member-type input[type=radio] + label {display: flex; justify-content: center; width: 200px; height: 40px;
+                                   		margin: 10px; padding: 10px 60px; border: none; border-radius: 5px;
+										font-size: 14px; letter-spacing: 3px; background-color: var(--main-color-gre);}
 .select input[type=radio]:checked + label {font-size: 15px; background-color: var(--main-color-yel);}
 
 /* 필수입력사항 */
