@@ -10,11 +10,11 @@
     <meta name="author" content="KH 3팀">
 
     <link rel="stylesheet" href="/common/common.css">
-    <link rel="stylesheet" href="/member/css/join_cust copy.css">
+    <link rel="stylesheet" href="/member/css/join_cust copy 2.css">
     <link rel="icon" href="/member/img/icon.svg"> <!-- 탭 아이콘 변경 -->
     <script src="https://kit.fontawesome.com/132ba309f6.js" crossorigin="anonymous"></script>
 	<script src="/member/js/join_cust copy.js"></script>
-    <title>JOIN CUSTOMER copy</title>
+    <title>JOIN CUSTOMER copy 2</title>
 </head>
 
 <body>
@@ -58,29 +58,21 @@
 			<div class="title content">
 				<h2>회원가입</h2>
 			</div>
+			<form class="join" action="">
 			<div class="member-type select content">
-				<input type="radio" class="select__customer" id="select--1" name="memType" value="customer" checked>
+				<input type="radio" class="select__customer" id="select--1" name="member-type__name">
 				<label for="select--1">고객회원</label>
-				<input type="radio" class="select__owner" id="select--2" name="memType" value="owner">
+				<input type="radio" class="select__owner" id="select--2" name="member-type__name">
 				<label for="select--2">점주회원</label>
 			</div>
 				<div class="required">
 					<label><span>*</span> 필수입력사항</label>
 				</div>
 			<div class="wrap-join content">
-				<form class="join" action="">
 					<div class="join__ele">
 						<div class="join__ele--1"><label for="">아이디<span> *</span></label></div>
 						<div class="join__ele--2"><input type="text" placeholder="아이디를 입력하세요."></div>
 						<div class="join__ele--3"><button>중복확인</button></div>
-					</div>
-					<div class="vali__ele">
-						<div class="vali__ele--1"></div>
-						<div class="vali__ele--2">
-							<p>8~15자 사이의 영문, 숫자 조합</p>
-							<p>중복 확인 필요</p>
-						</div>
-						<div class="vali__ele--3"></div>
 					</div>
 					<div class="join__ele">
 						<div class="join__ele--1"><label for="">비밀번호<span> *</span></label></div>
@@ -151,10 +143,9 @@
 						</div>
 						<div class="vali__ele--3"></div>
 					</div>
-				</form>
-			</div>
-			<div class="wrap-terms content">
-				<div class="title-terms">
+				</div>
+				<div class="wrap-terms content">
+					<div class="title-terms">
 					<h3>이용약관</h3>
 				</div>
 				<div class="terms">
@@ -185,6 +176,7 @@
 					<label for="">가입하기</label>
 				</button>
 			</div>
+		</form>
 		</main>
         <!-- //main -->
 
