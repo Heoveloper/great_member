@@ -37,7 +37,7 @@ h2 {letter-spacing: 3px; margin: 10px 0px; padding: 0px;}
 .wrap-join::before {content: ""; display: block; width: 70%; border-bottom: 1px solid #000; margin: auto;}
 .wrap-join::after {content: ""; display: block; width: 70%; border-bottom: 1px solid #000; margin: auto;}
 
-.join {margin-top: 30px; padding: 20px}
+.join {display: flex; flex-direction: column; align-items: center; margin-top: 30px; padding: 20px}
 .join input:focus {outline: none;}
 .join button {display: flex; justify-content: center; align-items: center;
 			  width: 100px; height: 30px;}
