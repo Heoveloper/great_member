@@ -26,9 +26,10 @@ h2 {letter-spacing: 3px; margin: 10px 0px; padding: 0px;}
 .select input[type=radio]:checked + label {font-size: 15px; background-color: var(--main-color-yel);}
 
 /* 필수입력사항 */
-.required {margin: 20px 0px 0px 600px; font-size: 12px;}
+.required {font-size: 12px;}
 .required label {letter-spacing: 2px;}
 .required span {color: var(--color-red);}
+.required::after {content: ""; display: block; width: 70%; border-bottom: 1px solid #000; margin: auto;}
 
 /* 입력폼 */
 .wrap-join {width: 700px; padding: 10px 0px;}
@@ -38,7 +39,7 @@ h2 {letter-spacing: 3px; margin: 10px 0px; padding: 0px;}
 .join button {display: flex; justify-content: center; align-items: center;
 			  width: 100px; height: 30px;}
 	
-.join__ele {display: inline-flex; width: 600px;}
+.join__ele {display: inline-flex; width: 600px; padding: 10px}
 .join__ele--1 {display: flex; justify-content: flex-start; align-items: center;
 			   width: 120px; text-align: left; margin-left: 30px;}
 .join__ele--1 span {color: var(--color-red)}
@@ -46,11 +47,12 @@ h2 {letter-spacing: 3px; margin: 10px 0px; padding: 0px;}
 .join__ele--3 {display: flex; justify-content: flex-start; align-items: center;
 			   width: 150px; align-items: right;}
 
-.wrap-join__ele {padding: 20px;}
+
+.wrap-join__ele {padding: 30px;}
 .wrap-join__ele input {width: 250px; height: 30px;
 					   border: none; border-bottom: 1px solid rgb(173, 173, 173);}
-.wrap-join__ele::before {content: ""; display: block; width: 70%; border-bottom: 1px solid #000; margin: auto;}
-.wrap-join__ele::after {content: ""; display: block; width: 70%; border-bottom: 1px solid #000; margin: auto;}
+/* .wrap-join__ele::before {content: ""; display: block; width: 70%; border-bottom: 1px solid #000; margin: auto;} */
+/* .wrap-join__ele::after {content: ""; display: block; width: 70%; border-bottom: 1px solid #000; margin: auto;} */
 
 /* 유효성검사 표시 */
 .vali__ele {display: inline-flex; width: 600px; margin-top: 5px;}
