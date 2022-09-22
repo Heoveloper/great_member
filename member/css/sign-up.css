@@ -33,7 +33,7 @@ h2 {letter-spacing: 3px; margin: 10px 0px;}
 .join-element button {display: flex; justify-content: center; align-items: center;
                       width: 100px; height: 30px;}
 
-.join-ele {display: inline-flex; width: 600px; padding: 10px}
+.join-ele {display: inline-flex; width: 600px; padding: 10px 10px 0px 10px;}
 .join-ele input {width: 250px; height: 30px;
                  border: none; border-bottom: 1px solid rgb(173, 173, 173);}
 .join-ele input:focus {outline: none;}
