@@ -21,6 +21,7 @@ h2 {letter-spacing: 3px; margin: 10px 0px;}
                                    		margin: 10px; padding: 10px 60px; border: none; border-radius: 5px;
 										font-size: 14px; letter-spacing: 3px; background-color: var(--main-color-gre);}
 .member-type input[type=radio]:checked + label {font-size: 15px; background-color: var(--main-color-yel);}
+/* #select--1[type=radio]:checked + label {background-color: #000} */
 
 /* 필수입력사항 고지 */
 .required {margin: 20px 0px 0px 600px; font-size: 12px; letter-spacing: 2px;}
@@ -66,3 +67,7 @@ h2 {letter-spacing: 3px; margin: 10px 0px;}
 /* 가입하기 버튼 */
 .join-btn {padding: 10px 70px; margin-bottom: 10px;
            font-weight: bold; background-color: var(--main-color-yel);}
+
+/* 고객/점주 탭 변경 */
+.owner-input {display: none;}
+.owner-input.reveal {display: block;}

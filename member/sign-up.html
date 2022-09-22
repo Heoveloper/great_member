@@ -13,8 +13,7 @@
     <link rel="stylesheet" href="/member/css/sign-up.css">
     <link rel="icon" href="/member/img/icon.svg"> <!-- 탭 아이콘 변경 -->
     <script src="https://kit.fontawesome.com/132ba309f6.js" crossorigin="anonymous"></script>
-    <!-- <script src="/member/js/sign-up.js"></script> -->
-    <title>SIGN UP</title>
+    <title>회원가입</title>
 </head>
 
 <body>
@@ -129,7 +128,7 @@
 						</div>
 						<div class="vali-ele">
 							<div class="vali-ele--1"></div>
-							<div class="vali-ele--2">이멜틀림</div>
+							<div class="vali-ele--2"></div>
 							<div class="vali-ele--3"></div>
 						</div>
 						<div class="join-ele">
@@ -142,26 +141,98 @@
 							<div class="vali-ele--2"></div>
 							<div class="vali-ele--3"></div>
 						</div>
+						<div class="owner-input">
+							<div class="join-ele">
+								<div class="join-ele--1"><label for="">사업자번호<span> *</span></label></div>
+								<div class="join-ele--2"><input type="text" placeholder="사업자번호를 입력하세요."></div>
+								<div class="join-ele--3"><button>인증</button></div>
+							</div>
+							<div class="vali-ele">
+								<div class="vali-ele--1"></div>
+								<div class="vali-ele--2"></div>
+								<div class="vali-ele--3"></div>
+							</div>
+							<div class="join-ele">
+								<div class="join-ele--1"><label for="">가게명<span> *</span></label></div>
+								<div class="join-ele--2"><input type="text" placeholder="가게명을 입력하세요."></div>
+								<div class="join-ele--3"><button>가게 찾기</button></div>
+							</div>
+							<div class="vali-ele">
+								<div class="vali-ele--1"></div>
+								<div class="vali-ele--2"></div>
+								<div class="vali-ele--3"></div>
+							</div>
+							<div class="join-ele">
+								<div class="join-ele--1"><label for="">가게 연락처<span> *</span></label></div>
+								<div class="join-ele--2"><input type="text" placeholder="가게 연락처를 입력하세요."></div>
+								<div class="join-ele--3"></div>
+							</div>
+							<div class="vali-ele">
+								<div class="vali-ele--1"></div>
+								<div class="vali-ele--2"></div>
+								<div class="vali-ele--3"></div>
+							</div>
+							<div class="join-ele">
+								<div class="join-ele--1"><label for="">가게 주소<span> *</span></label></div>
+								<div class="join-ele--2"><input type="text" class="address_kakao" placeholder="가게 주소를 입력하세요."></div>
+								<div class="join-ele--3"><button type="button" class="address_kakao">주소 검색</button></div>
+							</div>
+							<div class="vali-ele">
+								<div class="vali-ele--1"></div>
+								<div class="vali-ele--2"></div>
+								<div class="vali-ele--3"></div>
+							</div>
+							<div class="join-ele">
+								<div class="join-ele--1"></div>
+								<div class="join-ele--2"><input type="text" class="address_kakao2" placeholder="상세 주소를 입력하세요."></div>
+								<div class="join-ele--3"></div>
+							</div>
+							<div class="vali-ele">
+								<div class="vali-ele--1"></div>
+								<div class="vali-ele--2"></div>
+								<div class="vali-ele--3"></div>
+							</div>
+							<div class="join-ele">
+								<div class="join-ele--1"><label for="">가게 소개</label></div>
+								<div class="join-ele--2"><input type="text" placeholder="가게 소개를 입력하세요."></div>
+								<div class="join-ele--3"></div>
+							</div>
+							<div class="vali-ele">
+								<div class="vali-ele--1"></div>
+								<div class="vali-ele--2"></div>
+								<div class="vali-ele--3"></div>
+							</div>
+							<div class="join-ele">
+								<div class="join-ele--1"><label for="">SNS</label></div>
+								<div class="join-ele--2"><input type="text" placeholder="인증번호를 입력하세요."></div>
+								<div class="join-ele--3"></div>
+							</div>
+							<div class="vali-ele">
+								<div class="vali-ele--1"></div>
+								<div class="vali-ele--2"></div>
+								<div class="vali-ele--3"></div>
+							</div>
+						</div>
 					</div>
                     <div class="terms">
                         <h3>이용약관</h3>
                         <div class="terms-ele">
-                            <div class="terms-ele--1"><input type="checkbox" name="" id=""></div>
+                            <div class="terms-ele--1"><input type="checkbox" name="checkTerms" id="terms--all" onclick='checkAll(this)'></div>
                             <div class="terms-ele--2"><label for="">전체 동의</label></div>
                             <div class="terms-ele--3"><a href="" class="view-terms">약관 보기</a></div>
                         </div>
                         <div class="terms-ele">
-                            <div class="terms-ele--1"><input type="checkbox" name="" id=""></div>
+                            <div class="terms-ele--1"><input type="checkbox" name="checkTerms" id="terms--1"></div>
                             <div class="terms-ele--2"><label for="">이용약관 동의</label></div>
                             <div class="terms-ele--3"><a href="" class="view-terms">약관 보기</a></div>
                         </div>
                         <div class="terms-ele">
-                            <div class="terms-ele--1"><input type="checkbox" name="" id=""></div>
+                            <div class="terms-ele--1"><input type="checkbox" name="checkTerms" id="terms--2"></div>
                             <div class="terms-ele--2"><label for="">개인정보 수집 동의</label></div>
                             <div class="terms-ele--3"><a href="" class="view-terms">약관 보기</a></div>
                         </div>
                         <div class="terms-ele">
-                            <div class="terms-ele--1"><input type="checkbox" name="" id=""></div>
+                            <div class="terms-ele--1"><input type="checkbox" name="checkTerms" id="terms--3"></div>
                             <div class="terms-ele--2"><label for="">개인정보 이용 동의</label></div>
                             <div class="terms-ele--3"><a href="" class="view-terms">약관 보기</a></div>
                         </div>
@@ -181,5 +252,10 @@
 		<!-- //footer -->
 
     </div>
+
+	<!-- script -->
+	<script src="/member/js/sign-up.js"></script>
+	<!-- //script -->
+
 </body>
 </html>
