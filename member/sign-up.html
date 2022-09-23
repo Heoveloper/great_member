@@ -125,7 +125,7 @@
 						<div class="join-ele">
 							<div class="join-ele--1"><label for="">이메일<span> *</span></label></div>
 							<div class="join-ele--2"><input type="email" placeholder="이메일을 입력하세요."></div>
-							<div class="join-ele--3"><button>인증번호 발송</button></div>
+							<div class="join-ele--3"><button type="button" class="btn send-num-btn">인증번호 발송</button></div>
 						</div>
 						<div class="vali-ele">
 							<div class="vali-ele--1"></div>
@@ -145,7 +145,7 @@
 						<div class="owner-input">
 							<div class="join-ele">
 								<div class="join-ele--1"><label for="">사업자번호<span> *</span></label></div>
-								<div class="join-ele--2"><input type="text" placeholder="사업자번호를 입력하세요."></div>
+								<div class="join-ele--2"><input type="text" placeholder="사업자번호를 입력하세요. (- 제외)"></div>
 								<div class="join-ele--3"><button>인증</button></div>
 							</div>
 							<div class="vali-ele">
@@ -165,7 +165,7 @@
 							</div>
 							<div class="join-ele">
 								<div class="join-ele--1"><label for="">가게 연락처<span> *</span></label></div>
-								<div class="join-ele--2"><input type="text" placeholder="가게 연락처를 입력하세요."></div>
+								<div class="join-ele--2"><input type="text" placeholder="가게 연락처를 입력하세요. (- 제외)"></div>
 								<div class="join-ele--3"></div>
 							</div>
 							<div class="vali-ele">
@@ -175,7 +175,7 @@
 							</div>
 							<div class="join-ele">
 								<div class="join-ele--1"><label for="">가게 주소<span> *</span></label></div>
-								<div class="join-ele--2"><input type="text" class="address" placeholder="가게 주소를 입력하세요."></div>
+								<div class="join-ele--2"><input type="text" class="address" placeholder="가게 주소를 입력하세요." readonly></div>
 								<div class="join-ele--3"><button type="button" class="btn addr-search-btn">주소 검색</button></div>
 							</div>
 							<div class="vali-ele">
@@ -192,6 +192,28 @@
 								<div class="vali-ele--1"></div>
 								<div class="vali-ele--2"></div>
 								<div class="vali-ele--3"></div>
+							</div>
+							<div class="hidden-address">
+								<div class="join-ele">
+									<div class="join-ele--1"></div>
+									<div class="join-ele--2"><input type="text" class="postcode" placeholder="우편 번호를 입력하세요." readonly></div>
+									<div class="join-ele--3"></div>
+								</div>
+								<div class="vali-ele">
+									<div class="vali-ele--1"></div>
+									<div class="vali-ele--2"></div>
+									<div class="vali-ele--3"></div>
+								</div>
+								<div class="join-ele">
+									<div class="join-ele--1"></div>
+									<div class="join-ele--2"><input type="text" class="extra-address" placeholder="참고 항목을 입력하세요." readonly></div>
+									<div class="join-ele--3"></div>
+								</div>
+								<div class="vali-ele">
+									<div class="vali-ele--1"></div>
+									<div class="vali-ele--2"></div>
+									<div class="vali-ele--3"></div>
+								</div>
 							</div>
 							<div class="join-ele">
 								<div class="join-ele--1"><label for="">가게 소개</label></div>
@@ -267,8 +289,8 @@
 
 					// 각 주소의 노출 규칙에 따라 주소를 조합한다.
 					// 내려오는 변수가 값이 없는 경우엔 공백('')값을 가지므로, 이를 참고하여 분기 한다.
-					var addr = ''; // 주소 변수
-					var extraAddr = ''; // 참고항목 변수
+					let addr = ''; // 주소 변수
+					let extraAddr = ''; // 참고항목 변수
 
 					//사용자가 선택한 주소 타입에 따라 해당 주소 값을 가져온다.
 					if (data.userSelectedType === 'R') { // 사용자가 도로명 주소를 선택했을 경우
@@ -293,22 +315,21 @@
 							extraAddr = ' (' + extraAddr + ')';
 						}
 						// 조합된 참고항목을 해당 필드에 넣는다.
-						document.getElementById("sample6_extraAddress").value = extraAddr;
+						document.querySelector(".extra-address").value = extraAddr;
 					
 					} else {
-						document.getElementById("sample6_extraAddress").value = '';
+						document.querySelector(".extra-address").value = '';
 					}
 
 					// 우편번호와 주소 정보를 해당 필드에 넣는다.
-					document.getElementById('sample6_postcode').value = data.zonecode;
-					document.getElementById("address").value = addr;
+					document.querySelector('.postcode').value = data.zonecode;
+					document.querySelector(".address").value = addr;
 					// 커서를 상세주소 필드로 이동한다.
-					document.getElementById("detailedAddress").focus();
+					document.querySelector(".detailedAddress").focus();
 				}
         	}).open();
 		});
 	</script>
-	<!-- //script -->
 
 </body>
 </html>

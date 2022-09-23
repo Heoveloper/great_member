@@ -71,3 +71,6 @@ h2 {letter-spacing: 3px; margin: 10px 0px;}
 /* 고객/점주 탭 변경 */
 .owner-input {display: none;}
 .owner-input.reveal {display: block;}
+
+/* 우편번호, 참고주소 감추기 */
+.hidden-address {display: none;}
