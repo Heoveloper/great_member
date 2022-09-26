@@ -1,9 +1,5 @@
 @charset "UTF-8";
 
-/* 커서: 포인터 */
-button {cursor: pointer;}
-button label {cursor: pointer;}
-
 /* 메인 구조 */
 .main {display: flex; flex-direction: column; align-items: center; text-align: center;
        width: 700px; height: 625px;}
